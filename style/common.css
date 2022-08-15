@@ -1,0 +1,51 @@
+a {
+	color: #36b3a4;
+	transition: 300ms all;
+}
+	a:hover, a:active, a:focus {
+		color: #d23a51;
+		border-bottom: 1px solid rgba( 0, 0, 0, 0.8 );
+	}
+	a.button {
+		display: inline-block;
+
+		padding: 0.5em 0.75em;
+
+		border: none !important;
+		background-color: #d23a51;
+		color: #fff;
+
+		border-radius: 3px;
+		transition: 300ms all;
+	}
+		a.button:hover {
+			background: #f79a08;
+		}
+	a.button.github {
+		position: relative;
+		padding-left: 3em;
+	}
+	a.button.github::before {
+		position: absolute;
+		left: 0.6em;
+		top: 0.6em;
+
+		display: block;
+		content: " ";
+		height: 32px;
+		width: 32px;
+
+		background: transparent url(../images/github.png) 0 0 no-repeat !important;
+	}
+
+b, strong {
+	font-weight: 600;
+}
+
+h1, h2, h3 {
+	font-family: "Montserrat";
+}
+	h3 {
+		font-size: 120%;
+		color: #555;
+	}

@@ -1,0 +1,129 @@
+body {
+	font-family: 'Lato', sans-serif;
+
+	background: #fff linear-gradient( 172deg, rgba( 221, 242, 245, 1 ), #fff 30em );
+	background-repeat: no-repeat;
+
+	min-height: 400px;
+
+	padding: 2em;
+}
+
+section#brand {
+	max-width: 100%;
+	margin: 0 2em 3em 2em;
+}
+	#brand a {
+		border-bottom: none !important;
+	}
+	#brand img {
+		min-width: 225px;
+		max-width: 100%;
+	}
+
+section#widgets {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+	.widget {
+		flex: 1;
+		position: relative;
+
+		min-width: 300px;
+		max-width: 600px;
+
+		margin-right: 2em;
+		margin-bottom: 2em;
+		padding: 2em;
+
+		background-color: #fff;
+
+		border-radius: 3px;
+		box-shadow: 0 0 0.15em rgba( 0, 0, 0, 0.2 );
+	}
+		.widget > :first-child { margin-top: 0; }
+		.widget > :last-child,
+		.textwidget > :last-child { margin-bottom: 0; }
+
+main#content {
+	padding: 1em 2em;
+}
+	#content h2 {
+		margin-top: 2.5em;
+		margin-bottom: 1.5em;
+	}
+		#content :first-child {
+			margin-top: 0;
+		}
+
+#members {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+
+	margin: 0 -1em;
+}
+	.member {
+		flex: 1;
+		flex-grow: 0;
+
+		min-width: 450px;
+		max-width: 600px;
+
+		margin-right: 2em;
+
+		padding: 1em 1em 0.6em 1em;
+
+		border: none !important;
+		color: #111 !important;
+		border-radius: 3px;
+		transition: 300ms all;
+	}
+		.member img {
+			float: left;
+			margin-right: 1em;
+			border-radius: 3px;
+		}
+		.member .name {
+			font-size: 125% !important;
+			margin-right: 1em;
+		}
+		.member .website {
+			display: inline-block;
+
+			padding: 0.1em 0.5em;
+
+			font-size: 90%;
+			background-color: rgba( 0, 0, 0, 0.025 );
+			color: #333;
+
+			border-radius: 3px;
+			transition: 300ms all;
+		}
+
+	.member:hover,
+	.member:active,
+	.member:focus {
+		background-color: rgba( 0, 0, 0, 0.025 );
+	}
+		.member:hover .website,
+		.member:active .website,
+		.member:focus .website {
+			background-color: rgba( 54, 179, 164, 0.5 );
+		}
+
+	.member:last-child::after {
+		content: " ";
+		flex: 1;
+		flex-grow: auto;
+	}
+
+	.member p {
+		margin-top: -0.4em;
+	}
+		.member .nick {
+			font-size: 90%;
+			font-style: italic;
+			color: rgba(0,0,0,0.8);
+		}
